@@ -1,0 +1,6 @@
+#!/bin/bash -l
+#SBATCH --exclusive
+hostname
+
+gcc -lm RETO2.c -o R2
+perf stat -e cycles,instructions,task-clock ./R2 
