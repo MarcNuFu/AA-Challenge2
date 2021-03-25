@@ -1,0 +1,31 @@
+AA. RETO2. n,m= 4096, iter_max=500
+***********************
+Executed using SLURM -->
+
+slurmstepd: error: *** JOB 109213 ON aolin11 CANCELLED AT 2020-10-11T14:25:22 DUE TO TIME LIMIT ***
+
+Executed using SLURM but compiled with different optimization flags -->
+
+RETO2. Jacobi relaxation 4096 x 4096 mesh, max. of 500 iterations
+   50, 0.112275
+  100, 0.079589
+  150, 0.065040
+  200, 0.056357
+  250, 0.050431
+  300, 0.046058
+  350, 0.042660
+  400, 0.039922
+  450, 0.037651
+  500, 0.035726
+Total Iterations:   500, ERROR: 0.035726, A[32][32]= 0.002328
+
+ Performance counter stats for './R22':
+
+ 2.222.990.606.158      cycles                    #    3,381 GHz
+   220.705.386.745      instructions              #    0,10  insn per cycle
+        657.447,83 msec task-clock                #    0,998 CPUs utilized
+
+     658,645716404 seconds time elapsed
+
+     656,812196000 seconds user
+       0,647846000 seconds sys
