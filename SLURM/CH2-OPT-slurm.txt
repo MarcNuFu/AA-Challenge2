@@ -1,0 +1,18 @@
+#!/bin/bash -l
+#SBATCH --exclusive
+hostname
+
+module rm gcc/8.2.0
+module add gcc/9.2.0
+
+# compile for CPU with optimization level 1
+gcc -Ofast -fopenmp -funroll-all-loops -lm $1 -o ${2}.O1
+
+# execute and measure total time and general performance counters
+perf stat ${2}.O1
+echo
+
+# execute and generate performance profiling file (perf.stat)
+perf record ${2}.O1
+
+# after remote execution, use the command "perf report" to visualize results
