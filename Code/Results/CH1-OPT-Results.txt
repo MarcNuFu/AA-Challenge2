@@ -1,0 +1,46 @@
+aolin15
+RETO2. Jacobi relaxation 4096 x 4096 mesh, max. of 500 iterations
+   50, 0.112275
+  100, 0.079589
+  150, 0.065040
+  200, 0.056357
+  250, 0.050431
+  300, 0.046058
+  350, 0.042660
+  400, 0.039922
+  450, 0.037651
+  500, 0.035726
+Total Iterations:   500, ERROR: 0.035726, A[32][32]= 0.002328
+
+ Performance counter stats for './R2.O1':
+
+         24.389,59 msec task-clock                #    2,981 CPUs utilized          
+             1.261      context-switches          #    0,052 K/sec                  
+                 4      cpu-migrations            #    0,000 K/sec                  
+             1.340      page-faults               #    0,055 K/sec                  
+    79.110.619.287      cycles                    #    3,244 GHz                    
+    49.782.699.910      instructions              #    0,63  insn per cycle         
+     1.143.926.708      branches                  #   46,902 M/sec                  
+         6.023.052      branch-misses             #    0,53% of all branches        
+
+       8,182732720 seconds time elapsed
+
+      24,358801000 seconds user
+       0,026937000 seconds sys
+
+
+
+RETO2. Jacobi relaxation 4096 x 4096 mesh, max. of 500 iterations
+   50, 0.112275
+  100, 0.079589
+  150, 0.065040
+  200, 0.056357
+  250, 0.050431
+  300, 0.046058
+  350, 0.042660
+  400, 0.039922
+  450, 0.037651
+  500, 0.035726
+Total Iterations:   500, ERROR: 0.035726, A[32][32]= 0.002328
+[ perf record: Woken up 16 times to write data ]
+[ perf record: Captured and wrote 3,846 MB perf.data (100784 samples) ]
