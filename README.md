@@ -1,2 +1,5 @@
 # AA-Challenge2
-Second optimization challenge from Advanced Architectures
+
+Segundo reto de optimización de la asignatura Arquitecturas Avanzadas
+
+Speed-up = 80.50x
